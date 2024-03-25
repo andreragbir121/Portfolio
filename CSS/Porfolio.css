@@ -1,0 +1,1295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+
+
+*{ /* Resetting default styles */
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+:root{/* Custom CSS Variables (Colors) */
+    --bg-color: #120829;
+    --second-bg-color: #241142;
+    --text-color: #ddddee;
+    --text-color2: #ffffff;
+    --main-color: #5c00f0;
+}
+
+
+html{/* Setting the base font size for responsive design */
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body{/* General Body Styles */
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+.header {/* Header Styles */
+    /* Fixed header at the top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+
+
+.header.sticky {/* Styling the sticky header */
+    background: var(--bg-color);
+}
+
+
+.logo{/* Logo Styles */
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+
+.navbar{/* Navbar Styles */
+    position: relative;
+}
+
+.navbar a{/* Navbar Links Styles */
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+
+.navbar a:hover,
+.navbar a.active{/* Navbar Link Hover and Active Styles */
+    color: var(--main-color);
+}
+
+
+#menu-icon {/* Menu Icon Styles */
+    position: relative;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+
+}
+
+
+section{/* Section Styles */
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+
+.home{/* Home Section Styles */
+    display: flex;
+    align-items: center;
+    padding: 0 9%; 
+    background: url(../pictures/myself.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.home-content{/* Home Content Styles */
+    max-width: 60rem;
+    z-index: 99;
+}
+
+
+.home-content h1 {/* Home Content Heading Styles */
+
+    position: relative;
+    display: inline-block;
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+.home-content h1 span{/* Styling the span within the Home Content Heading */
+    color: var(--text-color);
+}
+
+
+.home-content .text-animate{/* Home Content Text Animate Styles */
+    position: relative;
+}
+
+
+/* Home Content Text Animate Heading Styles */
+.home-content .text-animate h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    -webkit-text-stroke: .7px var(--main-color);
+    background-image: linear-gradient(var(--main-color),var(--main-color));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -33rem 0;
+}
+
+
+/* Animation for the text in Home Content Text Animate */
+.home.show-animate .home-content .text-animate h3{
+    animation: homeBGText 6s linear infinite;
+    animation-delay: 2s;
+}
+
+
+/* Home Content Paragraph Styles */
+.home-content p {
+    position: relative;
+    font-size: 1.6em;
+    margin: 2rem 0 4rem;
+}
+
+
+/* Button Box Styles */
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+}
+
+
+/* Button Styles */
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: .8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+/* Button Hover Styles */
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+
+/* Styling the second button in the Button Box */
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+}
+
+
+/* Second Button Hover Styles */
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+
+/* Styling the pseudo-element before the second button in the Button Box */
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);   
+}
+
+
+/* Styling the pseudo-element before the Button Box Buttons */
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+
+/* Button Box Buttons Hover Styles */
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+
+/* Home Science Section Styles */
+.home-sci {
+    position: absolute;
+    bottom: 4rem;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Home Science Icon Styles */
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: .2rem solid var(--main-color);    
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+/* Home Science Icon Hover Styles */
+.home-sci a:hover {
+    color:var(--bg-color)
+}
+
+
+/* Styling the pseudo-element before the Home Science Icons */
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+
+/* Home Science Icon Hover Styles for the pseudo-element */
+.home-sci a:hover::before{ 
+    width: 100%;
+}
+
+
+/* Home Image Hover Styles */
+.home-imgHover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+    background: transparent;
+    transition: 3s;
+}
+
+
+/* Home Image Hover Styles on Hover */
+.home-imgHover:hover{
+    background: var(--bg-color);
+    opacity: .8;
+
+}
+
+/*--------------------------------------------------------------------*/
+
+/* about section*/
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+}
+
+
+/* About Section Heading Styles */
+.heading {
+    position: relative;
+    display: inline-block;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+
+/* Styling the span within the About Section Heading */
+span {
+    color: var(--main-color);
+}
+
+
+/* About Image Styles */
+.about-img{
+    position:relative;
+    width: 25rem;
+    height:25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Styling the image within the About Image */
+.about-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+
+/* Spinner Animation Styles for About Image */
+.about-img .cirlce-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+    animation: aboutSpinner 8s linear infinite;
+}
+
+
+/* About Content Styles */
+.about-content {
+    text-align: center;
+}
+
+
+/* About Content Heading Styles */
+/* Styles for headings and paragraphs in the About section */
+.about-content h3{
+    position: relative;
+    display: inline-block;
+    font-size: 2.6rem;
+}
+
+
+/* Styles for paragraphs in the About section */
+.about-content p{
+    position: relative;
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+
+/* Styles for buttons within the .btn-box.btns class */
+/* The buttons have a background defined by the --second-bg-color variable */
+.btn-box.btns {
+    display: inline-block;
+    width: 15rem;
+}
+
+.btn-box.btns a::before{
+    background: var(--second-bg-color);
+}
+
+
+/* education section */
+/* Styles for the education section */
+.education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+
+/* Styles for the rows of education details */
+.education .education-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+
+/* Styles for the columns of education details */
+.education-row .education-column {
+    flex: 1 1 40rem;
+}
+
+/* Styles for the titles of each education entry */
+.education-column .title{
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 6 0 1 .5rem 2rem;
+}
+
+/* Styles for the education boxes with a left border */
+.education-column .education-box{
+    position: relative;
+    border-left: .2rem solid var(--main-color);
+}
+
+/* Styles for the content of each education box */
+.education-box .education-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+/* Hover animation effect for each education box */
+.education-box .education-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+/* Styles for the content inside each education box with hover animation */
+.education-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+/* Hover animation effect for each education box */
+.education-content .content::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+background: var(--second-bg-color);
+z-index: -1;
+transition: .5s;
+}
+.education-content .content:hover::before{
+width: 100%;
+}
+
+/* Styles for the year and heading of each education entry */
+.education-content .content .year{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+
+.education-content .content .year{
+    padding-right: .5rem;
+}
+
+.education-content .content h3 {
+    font-size: 2rem;
+}
+
+/* Styles for the year and heading of each education entry */
+.education-content .content p{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+/* certifcates section */
+.certifcates{
+    align-items: center;
+    justify-content: center;
+    background: var(--second-bg-color);
+}
+.certifcates.heading{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.certifcates h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.certifcates h2 span{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.outer-container {
+  display: flex;
+  justify-content: center;
+  width: 75%; /* Adjust the overall width as needed */
+  margin: 0 auto; /* Horizontally center the outer container */
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  width: 300%; /* Adjust the width based on the number of slides */
+  transition: transform 0.5s ease;
+
+}
+
+.slide {
+  flex: 0 0 33.33%; /* Adjust the width based on the number of slides */
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  padding-left: 50px;
+  padding-right:50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slide-content:hover img {
+  transform: scale(1.05);
+}
+
+.view-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.slide-content:hover .view-button {
+  opacity: 1;
+}
+
+
+.view-button a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgba(89, 0, 255, 0.5);
+  color: #ddd;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.view-button a:hover {
+    background-color: #5c00f0; /* Lighter shade on hover */
+    color: white; /* Adjust text color for better visibility on the lighter background */
+    opacity: 80%;
+  
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border: none;
+  color: var(--main-color);
+  font-size: 45px;
+  cursor: pointer;
+}
+
+
+.prev-btn {
+   z-index: 1;
+   left:-23px;
+}
+
+.next-btn {
+    right:-23px;
+    z-index: 1; /* Ensure the button is above the slide */
+}
+
+/*-------------------------------------------------------------------*/
+
+/* skills section*/
+/* Styles for the skills section */
+.skills {
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+/* Styles for the skills section */
+.skills h2{
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Styles for the skills section */
+.skills .skills-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+/* Styles for the columns of skills */
+.skills-row .skills-column{
+  flex: 1 1 40rem;
+}
+
+/* Styles for the columns of skills */
+.skills-column .title {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem;
+}
+
+/* Styles for the skill boxes */
+.skills-column .skills-box{
+    position: relative;
+}
+
+/* Styles for the content of each skill box with hover animation */
+.skills-box .skills-content{
+    position: relative;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    padding: .5rem 1.5rem;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Hover animation effect for each skill box */
+.skills-box .skills-content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.skills-box .skills-content:hover::before{
+    width: 100%;
+}
+
+/* Styles for the progress bars and headings in the skill entries */
+.skills-content .progress {
+    padding: 1rem 0;
+}
+
+.skills-content .progress h3{
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styles for the progress bars and headings in the skill entries */
+.skills-content .progress h3 span {
+    color: var(--text-color);
+}
+
+/* Styles for the progress bars */
+.skills-content .progress .bar{
+    height: 2.5rem;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+    padding: .5rem;
+    margin: 1rem 0;
+}
+
+/* Styles for the progress bars */
+.skills-content .progress .bar span{
+    display: block;
+    height: 100%;
+    border-radius: .3rem;
+    background: var(--main-color);
+}
+
+/* coding skills*/
+.skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span{
+    width: 92%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span{
+    width: 84%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span{
+    width: 70%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span{
+    width: 65%;
+}
+
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(1) .skills-content .progress:nth-child(6) .bar span{
+    width: 60%;
+}
+
+
+
+/* professional skills*/
+.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
+    width: 90%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span{
+    width: 85%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span{
+    width: 75%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
+    width: 80%;
+}
+
+.skills-column:nth-child(2) .skills-content .progress:nth-child(6) .bar span{
+    width: 80%;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*projects */
+.portfolio{
+    background: var(--second-bg-color);
+}
+.portfolio.heading{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.portfolio h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.portfolio h2 span{
+    color: var(--main-color);
+    text-align: center;
+}
+.sub-heading{
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 510;
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.portfolio h3 span{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.extra-Work,
+.Wesbites-Portfolio
+{
+    position: relative;
+    padding-top: 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(335px,auto));
+}
+
+.row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.row img{
+    width: 100%;
+    border-radius: 0px;
+    display: block;
+    transition: transform 0.5s;
+    padding: 10px;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.1),var(--second-bg-color));
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom:0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 25px;
+    transition: height 0.5s;
+}
+
+.layer h5 {
+    color: var(--main-color);
+    font-size: 24px;
+    font-weight: 550;
+    margin-bottom: 15px;
+}
+
+.layer p{
+    color: var(--text-color2);
+    font-size: 1.4rem;
+    line-height: 1.1;
+}
+
+.layer i{
+    margin-top: 20px;
+    font-size: 20px;
+    background: var(--main-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.layer i:hover{
+    background: var(--second-bg-color);
+}
+
+.row:hover img{
+    transform: scale(1.1);
+    filter: blur(5px);
+    transition: 2s;
+
+}
+
+.row:hover .layer{
+    height: 100%;
+}
+
+.bx bx-link-external{
+    background: green;
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* contact section */
+/* Styles for the contact section */
+.contact{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+/* Styles for the heading of the contact section */
+.contact h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Styles for the heading of the contact section */
+.contact form{
+  max-width: 70rem;
+   margin: 0 auto;
+    text-align: center;   
+}
+
+/* Styles for the heading of the contact section */
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Styles for the individual input fields */
+.contact form .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+/* Styles for the individual input fields */
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+/* Styles for the individual input fields */
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+    color: var(--text-color);
+}
+
+
+/* Styles for the individual input fields */
+.contact form .focus {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--second-bg-color);
+    border-radius: .6rem;
+    z-index: -1;
+    transition: .5s;
+}
+
+/* Styles for the focus effect when an input field is focused or contains content */
+.contact form .input-box .input-field input:focus~.focus,
+.contact form .input-box .input-field input:valid~.focus,
+.contact form .textarea-field textarea:focus~.focus,
+.contact form .textarea-field textarea:valid~.focus{
+    width:100%
+}
+
+/* Styles for the focus effect when an input field is focused or contains content */
+.contact form .textarea-field {
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+/* Styles for the focus effect when an input field is focused or contains content */
+.contact form .textarea-field textarea{
+    resize: none;   
+}
+
+.contact form .btn-box.btns .btn{
+    cursor: pointer;   
+}
+
+/* ANIMATION RELOAD AND SCROLL */
+/* Styles for the animation effects */
+.animate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 98;
+}
+
+.animate.home-img{
+    width:50%
+}
+    
+    .logo .animate,
+    .navbar .animate,
+#menu-icon .animate,
+.home.show-animate .animate,
+.certifcates.show-animate .animate,
+.portfolio-content.show-animate .animate{
+        animation: showRight 1s ease forwards;
+        animation-delay: calc(.3s * var(--i));
+    }
+
+    .animate.scroll{
+        transition: 1s ease;
+        transition-delay: calc(.3s / var(--i));
+        animation: none;
+    }
+
+    section:nth-child(odd) .animate.scroll{
+        background: var(--second-bg-color);
+    }
+
+    .education .education-box .animate.scroll{
+        width: 105%;
+
+    }
+
+    .about.show-animate .animate.scroll,
+    .education.show-animate .animate.scroll,
+    .skills.show-animate .animate.scroll,
+    .portfolio.show-animate .animate.scroll,
+    .image_box.show-animate .animate,
+
+    .contact.show-animate .animate.scroll{
+        transition-delay: calc(.3s * var(--i));
+        width: 0;
+    }
+
+/*BREAKPOINTS*/
+/* MEDIA QUERIES */
+/* Media queries for different screen sizes */
+@media (max-width: 1200px){
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    /* Adjusting padding in the header and sections for smaller screens */
+    .header {
+        padding: 2rem 4%
+    }
+
+    section{
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+}
+
+@media (max-width: 850px){
+    /* Adjusting size of the home image for smaller screens */
+    .animate.home-img{
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        /* Styling for mobile navigation menu */
+        background: var(--bg-color);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+    
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--main-color);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .25s;
+    }
+
+    .navbar.active {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar .active-nav{
+        position:absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        z-index: -1;
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active .active-nav{
+        left: 0;
+        transition-delay: .25s;
+
+    }
+    
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: .25s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.active a{
+        transform: translateX(0);
+        transition-delay: .25s;
+
+    }
+
+    /* Styling for the home image when the navigation menu is active */
+    .home-imgHover{
+        pointer-events: none;
+        background: var(--bg-color);
+        opacity: .6;
+    }
+}
+
+
+@media (max-width: 520px ) {
+    html{
+        font-size: 50%;
+    }
+    .home-content h1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci {
+        width: 160px;
+    }
+
+    .home-sci a {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+
+footer{
+    padding: 5px;
+}
+
+@media (max-width: 462px ) {
+    /* Adjusting size of elements for smaller screens */
+    .home-content h1{
+        font-size: 5.2rem;
+    }
+
+    .education {
+        padding: 10rem 4% 5rem 5%;
+        
+    }
+
+    .contact form .input-box .input-field{
+        width: 100%;
+
+    }
+}
+
+@media (max-width:371px){
+    .home{
+        justify-content: center;
+    }
+
+    .home-content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*keyframes animation */
+
+@keyframes homeBGText{
+    0%,
+    10%,
+    100%{
+        background-position: -33rem 0;
+    }
+
+    65%,
+    85%{
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+        }
+
+    65%,
+    78%,
+    85%{
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,
+    81%{
+        opacity: 0;
+
+    }
+}
+
+@keyframes aboutSpinner{
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg) ;
+    }
+}
+
+@keyframes showRight{
+    100% {
+        width: 0;
+
+    }
+}
+
+@keyframes showRight{
+    100% {
+        width: 0;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+}
