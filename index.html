@@ -419,7 +419,7 @@
                     <div class="layer">
                         <h5>AlienX Business website</h5>
                         <p>Website created with HTML CSS and JS, with intentions of making it a business website for my game development projects. Unfortunately I have abondoned the project for now and may decide to work on it later on.</p>
-                        <a href=""><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        <a href="https://andreragbir121.github.io/AlienX-business-website/" target="_blank"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                     </div>
                 </div>
                 
@@ -430,7 +430,7 @@
                     <div class="layer">
                         <h5>Lata-Bites Front-End design</h5>
                         <p>Designed a website using html and CSS as a personal project for a food resturaunt idea that serves food and desserts late at night to satisfy late night cravings of individuals</p>
-                        <a href=""><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        <a href="https://andreragbir121.github.io/Late-Bites/" target="_blank"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                     </div>
                 </div>
 
@@ -441,7 +441,7 @@
                     <div class="layer">
                         <h5>My Portfolio</h5>
                         <p>My Portfolio created with HTML, CSS and JS to present a range of work Accomplished by me including college work, my developed websites and more. Consisting of multiple pages for different types of projects.</p>
-                        <a href=""><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                        <a href="https://andreragbir121.github.io/Portfolio/" target="_blank"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                     </div>
                 </div>
 
@@ -455,7 +455,7 @@
                     </div>
                 </div>
 
-                s
+    
             </div>
 
             
@@ -463,17 +463,8 @@
 
             <h3 class="sub-heading">Game dev and <span>Learning Journey</span><span class="animate scroll" style ="--i:2;"></span></h3>           
             <div class="extra-Work">
+            
                 <div class="row"><span class="animate scroll" style ="--i:4;"></span>
-                    <img src="pictures/CollegeWork.jpeg">
-                    <div class="layer">
-                        <h5>College work</h5>
-                        <p>view a collection of assignments and final projects completed through out my journey at COSTAATT.</p>
-                        <a href="HTML - College Work/College Journey.html"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
-                    </div>
-                </div>
-
-
-                <div class="row"><span class="animate scroll" style ="--i:6;"></span>
                     <img src="pictures/ProgrammingLearningProjects.jpg">
                     <div class="layer">
                         <h5>Web-Dev-practice</h5>
@@ -482,13 +473,20 @@
                     </div>
                 </div>
 
+                <div class="row"><span class="animate scroll" style ="--i:6;"></span>
+                    <img src="pictures/CollegeWork.jpeg">
+                    <div class="layer">
+                        <h5>College work</h5>
+                        <p>view a collection of assignments and final projects completed through out my journey at COSTAATT.</p>
+                        <a href="HTML - College Work/College Journey.html" target="_blank"><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
+                    </div>
+                </div>
                 
                 <div class="row"><span class="animate scroll" style ="--i:8;"></span>
                     <img src="pictures/MyGameProjects.jpeg">
                     <div class="layer">
-                        <h5>UI/UX designer</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In vero voluptates, quaerat asperiores id fuga
-                        exercitationem at quisquam nihil deserunt voluptatibus similique, suscipit, quasi quae placeat! Alias itaque quis inventore.</p>
+                        <h5>My Game Projects</h5>
+                        <p>View a collection of innovative, video games created by me, with the use of unity and C# programming.</p>
                         <a href=""><i class='bx bx-link-external' style="color: aliceblue;"></i></a>
                     </div>
                 </div>
@@ -505,17 +503,23 @@
     
     <!-- Contact form -->
      <form action="https://formsubmit.co/andreragbir121@gmail.com" method="POST">
+        <!--Honeypot-->
+        <input type="text" name="_honey" style="display:none;">
+
+        <!--Display Capthca-->
+        <input type="hidden" name="_captcha" value="false">
+        
         <div class="input-box">
 
             <!-- Input field for Full Name -->
             <div class="input-field">
-                <input type="text" placeholder="Full name" id="Full-name" required>
+                <input type="text" placeholder="Full name" name = "full-name" id="Full-name" required>
                 <span class="focus"></span>
             </div>
 
             <!-- Input field for Full Name -->
             <div class="input-field">
-                <input type="text" placeholder="Email Address" id="email" required>
+                <input type="text" placeholder="Email Address" name="email" id="email" required>
                 <span class="focus"></span>
             </div>
             <span class="animate scroll" style ="--i:3;"></span>
@@ -524,13 +528,13 @@
        <!-- Input field for Mobile Number -->
         <div class="input-box">
             <div class="input-field">
-                <input type="number" placeholder="Mobile Number" id="number" required>
+                <input type="phone-number" placeholder="Mobile Number" name="number" id="number" required>
                 <span class="focus"></span>
             </div>
 
             <!-- Input field for Email Subject -->
             <div class="input-field">
-                <input type="text" placeholder="Email subject" id="subject" required>
+                <input type="text" placeholder="Email subject" name="subject" id="subject" required>
                 <span class="focus"></span>
             </div>
             <span class="animate scroll" style ="--i:5;"></span>
@@ -538,7 +542,7 @@
 
         <!-- Textarea field for the message -->
         <div class="textarea-field">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="your message" required></textarea>
+            <textarea name="message" id="message" cols="30" name="message" rows="10" placeholder="your message" required></textarea>
             <span class="focus"></span>
             <span class="animate scroll" style ="--i:7;"></span>
         </div>
