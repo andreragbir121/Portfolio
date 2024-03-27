@@ -1,0 +1,41 @@
+:root{/* Custom CSS Variables (Colors) */
+    --bg-color: #120829;
+    --second-bg-color: #241142;
+    --text-color: #ddddee;
+    --text-color2: #ffffff;
+    --main-color: #5c00f0;
+}
+
+
+body {
+  text-align: center;
+  padding: 40px 0;
+  background: var(--bg-color);
+}
+  h1 {
+    color: var(--main-color);
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: var(--text-color);
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-size:20px;
+    margin: 0;
+  }
+i {
+  color: var(--main-color);
+  font-size: 100px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.card {
+  background: var(--second-bg-color);
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px var(--main-color);
+  display: inline-block;
+  margin: 0 auto;
+}
