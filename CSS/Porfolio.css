@@ -238,7 +238,7 @@ section{/* Section Styles */
 }
 
 
-/* Home Science Section Styles */
+/* Home Section Styles */
 .home-sci {
     position: absolute;
     bottom: 4rem;
@@ -248,7 +248,7 @@ section{/* Section Styles */
 }
 
 
-/* Home Science Icon Styles */
+/* Home Icon Styles */
 .home-sci a {
     position: relative;
     display: inline-flex;
@@ -267,13 +267,13 @@ section{/* Section Styles */
 }
 
 
-/* Home Science Icon Hover Styles */
+/* Home  Icon Hover Styles */
 .home-sci a:hover {
     color:var(--bg-color)
 }
 
 
-/* Styling the pseudo-element before the Home Science Icons */
+/* Styling the pseudo-element before the Home Icons */
 .home-sci a::before {
     content: '';
     position: absolute;
@@ -287,7 +287,7 @@ section{/* Section Styles */
 }
 
 
-/* Home Science Icon Hover Styles for the pseudo-element */
+/* Home  Icon Hover Styles for the pseudo-element */
 .home-sci a:hover::before{ 
     width: 100%;
 }
@@ -1290,6 +1290,97 @@ footer{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2rem 9%;
-    background: var(--bg-color);
+    padding: 2px 12%;
+}
+.footer-text{
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.site-footer {
+  background-color:var(--second-bg-color);
+  text-align: center;
+}
+
+.subtext-header {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.subtext-main {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.footer-contact i {
+    font-size: 50px;
+    padding-bottom: 35px;
+}
+.footer-box {
+    border: .2rem solid var(--main-color);    
+  padding: 20px;
+  border-radius: 10px;
+  width: 220px;
+  height: 200px;
+  text-align: center;
+}
+.footer-box a {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-color);
+    
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    border: .2rem solid var(--main-color);    
+    border-radius: 15%;
+    font-size: 20px;
+    color: var(--main-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.footer-socials i{
+    font-size: 25px;
+}
+
+.footer-socials a:hover {
+    color:var(--bg-color);
+    
+}
+.footer-socials a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+
+.footer-socials a:hover::before{ 
+    width: 100%;
 }
