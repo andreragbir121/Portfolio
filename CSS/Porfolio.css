@@ -1327,15 +1327,15 @@ footer{
     padding-bottom: 35px;
 }
 .footer-box {
-    border: .2rem solid var(--main-color);    
+border: .2rem solid var(--main-color);    
   padding: 20px;
   border-radius: 10px;
-  width: 220px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   text-align: center;
 }
 .footer-box a {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     color: var(--text-color);
