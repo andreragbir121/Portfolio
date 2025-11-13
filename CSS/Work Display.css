@@ -122,3 +122,153 @@ body {
   }
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+
+:root {
+    --bg-color: #120829;
+    --second-bg-color: #241142;
+    --text-color: #ddddee;
+    --main-color: #5c00f0;
+    --extra-color: #421c7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.split-box {
+    display: flex;
+    width: 1400px; /* Fixed total width */
+    height: 750px; /* Fixed total height */
+    background: transparent;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.split-left {
+    width: 700px; /* Fixed width - exactly half */
+    height: 750px; /* Fixed height */
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.split-left h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.split-left p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-weight: 300;
+    max-width: 500px;
+    overflow: hidden; /* Prevents text from affecting layout */
+}
+
+.split-left span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.split-line {
+    width: 2px;
+    height: 750px; /* Fixed height to match container */
+    background: linear-gradient(to bottom, transparent, var(--main-color), transparent);
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.split-right {
+    width: 700px; /* Fixed width - exactly half */
+    height: 750px; /* Fixed height */
+    background: var(--extra-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container iframe {
+    width: 550px;
+    height: 655px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: white;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+.image-container img {
+    width: 550px;
+    height: 655px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background: white;
+    flex-shrink: 0; /* Prevents shrinking */
+}

@@ -1,0 +1,100 @@
+[
+    {
+        "id": 1,
+        "title": "Suzuki Vitara IG advertisement",
+        "description": "Instagram advertisement created in the class 'GRDE 129: Introduction to Graphic Design' displaying the Suzuki Vitara, by utilizing the software Adobe Illustrator and tools such as scaling, cropping for getting the best-suited image size, dragging and dropping for the best position, and stylish fonts to enhance the appearance. A lot was learned from this assignment in relation to using Adobe Illustrator, and it was a great experience for exploring the creative side of my mind..",
+        "embedType": "image",
+        "embedSrc": "../pictures/College Work/suzuki Vitara pic.png"
+    },
+    {
+        "id": 2,
+        "title": "Suzuki Ignis Advertisement",
+        "description": "Instagram advertisement created in the class 'GRDE 129: Introduction to Graphic Design', presenting the Suzuki Ignis by utilizing the software Adobe Illustrator and tools such as scaling, cropping for getting the best-suited image size, dragging and dropping for the best position, and stylish fonts to enhance the appearance. A lot was learned from this assignment in relation to using Adobe Illustrator, and it was a great experience for exploring the creative side of my mind.",
+        "embedType": "image",
+        "embedSrc": "../pictures/College Work/Suzuki Ignis Portfolio pic.png"
+    },
+    
+    {
+        "id": 3,
+        "title": "Haagen-Dazs Indesign Assignment",
+        "description": "Designed in the class 'GRDE 129: Introduction to Graphic Design' using Adobe InDesign, with innovative tools such as scaling for proper sizing of images, sophisticated fonts for attractivity, and color droppers for applying blending colors to fonts to complement the images, and demonstrating my creativity. A lot was learned from this course when it comes to designing and expressing the creative mind.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1QQXL0tCqLKcsriZiya9i8bDb_0xO6qbh/preview"
+    },
+
+    {
+        "id": 4,
+        "title": "Mythic Runner(Final Project)",
+        "description": "An innovative advertisement was created to showcase one of the few video games that I created for my final project in the class 'GRDE-129:Introduction to Graphic Design' using the software 'Adobe InDesign.'",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1M8q0ohS4BaGapH2rNHpCRRhDI_P9OYpC/preview"
+    },
+
+
+    {
+        "id": 5,
+        "title": "Digital Security Ethics, and Privacy",
+        "description": "Group assignment completed in the class 'ITEC-120: Introduction to Computer Hardware.' Discussing security issues faced through the internet, such as malware and cyber-attacks, and how easily an individual can be targeted. Points were also presented for implementation on how to solve these issues, such as setting a strong password, using biometric scans, multi-factor authentication, and more. Internet security can be a serious issue, and doing this assignment was a great lesson for an IT user.",
+        "embedType": "iframe",
+        "embedSrc": "https://docs.google.com/presentation/d/e/2PACX-1vR2DDnN0CCpV_D5CPEAwnBU-zCqTG4I-lR0JCV2ozgS8F6-u1JpXj9_aak7Hy_vkQ/embed?start=true&loop=true&delayms=5000"
+    },
+
+
+    {
+        "id": 6,
+        "title": "History Of Telecommunication",
+        "description": "The final project was accomplished in the class 'ITEC-120: Introduction to Computer Hardware,' beginning by defining telecommunication as the transmission of signals for communication over a distance. A discussion of the evolution of telecommunication over the years was also included, as were some examples of telecommunication with advantages such as saving time and gasoline rather than traveling from one point to another to communicate. While there are in fact a lot of advantages, some may still find it difficult to understand or unable to access it in rural areas. This project taught a valuable lesson on the reasons for telecommunications use and the benefits of it to society.",
+        "embedType": "iframe",
+        "embedSrc": "https://docs.google.com/document/d/e/2PACX-1vTvxuJ_a5tBSTowQCsbAA8i_QxisjzJCwrhqF8QcD5kdl64O4dtACRkvncAkauE1HaFg_mI7_54U6kx/pub?embedded=true"
+    },
+
+    {
+        "id": 7,
+        "title": "History of Windows",
+        "description": "Final Project for the class 'ITEC-122: Introduction to Operating Systems' in relation to the history of Windows, starting from Windows 1.0, released in 1985, until Windows 11, released in 2021. Windows device management, including the I/O manager, device driver, and more, were mentioned. Additionally, Windows process management, including process creation and scheduling, priority levels, and more, as well as memory management containing the kernel, memory protection and pools, and a lot more, were also discussed within the project. During the completion of this project, I was able to learn a lot and gain in-depth knowledge of the Windows operating systems.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1FNB33O5lnuIB7ZlBLIV0vkNSQenU6jb4/preview"
+    },
+
+    {
+        "id": 8,
+        "title": "Methods in JAVA",
+        "description": "Program created in the class 'ITEC-133: Introduction to Programming,' using different methods, including a method for calculating the hypotenuse of specific numbers by taking user input for height and width and using math functions for calculation; a second method for getting menu options based on user input and using a switch statement for each input; and a third method for calculating the sum of squared numbers between 0 and the input given by the user. Math functions were used to find the square of numbers along with the sum. and finally, a palindrome checker that used a for loop to iterate through a word and determine if it was a palindrome or not; the program would output a statement instructing whether it was a palindrome or not.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1GldhmjXMveqRovT4dKbVouT7Er_unC2L/preview"
+    },
+
+    {
+        "id": 9,
+        "title": "GPA calculator using JAVA",
+        "embedType": "iframe",
+        "description": "Final project to conclude the class 'ITEC 133: Introduction to Programming,' Using Intelij, I was able to create a program that was capable of taking a student's full name and student ID, along with their current academic year and semester, and the total courses enrolled in for the semester. The program was capable of calculating the total GPA of the student based on the number of courses and credits per course. A switch statement was used in order to return the respective grade based on the GPA. This final project enabled a valuable lesson for my journey in programming by giving me in-depth knowledge of using a switch statement properly.",
+        "embedSrc": "https://drive.google.com/file/d/1FgfFopZQTEeftZcVkDq3WDKDD7SNQKO1/preview"
+    },
+
+    {
+        "id": 10,
+        "title": "System vulnerability and Computer Crimes",
+        "description": "Group assignment in the class 'ITEC-140: Commercial and Industrial Systems' discussing different issues that can possibly happen with systems in organizations, such as security issues, hardware failure and more.",
+        "embedType": "iframe",
+        "embedSrc": "https://docs.google.com/presentation/d/e/2PACX-1vTgahm2X1c7XvdC6bibB1HzAG_Ieg0u8c6HJofDxNnf5z4KnTG_RYRFsZTJFOuBXg/embed?start=false&loop=false&delayms=5000"
+    },
+
+    {
+        "id": 11,
+        "title": "Brain-Blitz: Galaxy",
+        "description": "finalized in the class 'ITEC 229: Human Computer Interface,' with the objective of designing software for an intended purpose. I decided to design a game designated for children below the age of 18 to enhance learning with the use of a phone. Due to the fact that they are being introduced to it at a very young age, it becomes an addiction. The game featured various levels such as alphabet learning, counting, and basic math operations, concluding with a challenging equation level. I designed documentation and conducted a survey for parents with children under 18, enhancing my skills for creating user-friendly software in the future",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1B46vBAB3QF_ZjqrVA_1QR_9x2MU4PgO_/preview"
+    },
+
+
+    {
+        "id": 12,
+        "title": "The Dark Side of Online Gaming",
+        "description": "Research paper on the dark side of online video games accomplished in the class 'LIBS LIBS 130: Fundamental Research Skills', with information based on the negative impact of online gaming towards children",
+        "embedType": "iframe",
+        "embedSrc": "https://docs.google.com/presentation/d/e/2PACX-1vTgahm2X1c7XvdC6bibB1HzAG_Ieg0u8c6HJofDxNnf5z4KnTG_RYRFsZTJFOuBXg/embed?start=false&loop=false&delayms=5000"
+    }
+
+]

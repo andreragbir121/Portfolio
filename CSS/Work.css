@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
-
-
-:root{/* Custom CSS Variables (Colors) */
+:root{
   --bg-color: #120829;
   --second-bg-color: #241142;
   --text-color: #ddddee;
@@ -186,7 +184,8 @@ h2 span{
   transform: translateY(0);
 }
 
-/* Trigger the fade-in animation for the images when they enter the viewport */
+
+
 @media screen and (min-width: 768px) {
   .row img {
       opacity: 0;
