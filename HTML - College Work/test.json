@@ -68,7 +68,7 @@
         "id": 9,
         "title": "GPA calculator using JAVA",
         "embedType": "iframe",
-        "description": "Final project to conclude the class 'ITEC 133: Introduction to Programming,' Using Intelij, I was able to create a program that was capable of taking a student's full name and student ID, along with their current academic year and semester, and the total courses enrolled in for the semester. The program was capable of calculating the total GPA of the student based on the number of courses and credits per course. A switch statement was used in order to return the respective grade based on the GPA. This final project enabled a valuable lesson for my journey in programming by giving me in-depth knowledge of using a switch statement properly.",
+        "description": "Final project to conclude the class 'ITEC-133: Introduction to Programming,' Using Intelij, I was able to create a program that was capable of taking a student's full name and student ID, along with their current academic year and semester, and the total courses enrolled in for the semester. The program was capable of calculating the total GPA of the student based on the number of courses and credits per course. A switch statement was used in order to return the respective grade based on the GPA. This final project enabled a valuable lesson for my journey in programming by giving me in-depth knowledge of using a switch statement properly.",
         "embedSrc": "https://drive.google.com/file/d/1FgfFopZQTEeftZcVkDq3WDKDD7SNQKO1/preview"
     },
 
@@ -83,18 +83,51 @@
     {
         "id": 11,
         "title": "Brain-Blitz: Galaxy",
-        "description": "finalized in the class 'ITEC 229: Human Computer Interface,' with the objective of designing software for an intended purpose. I decided to design a game designated for children below the age of 18 to enhance learning with the use of a phone. Due to the fact that they are being introduced to it at a very young age, it becomes an addiction. The game featured various levels such as alphabet learning, counting, and basic math operations, concluding with a challenging equation level. I designed documentation and conducted a survey for parents with children under 18, enhancing my skills for creating user-friendly software in the future",
+        "description": "finalized in the class 'ITEC-229: Human Computer Interface,' with the objective of designing software for an intended purpose. I decided to design a game designated for children below the age of 18 to enhance learning with the use of a phone. Due to the fact that they are being introduced to it at a very young age, it becomes an addiction. The game featured various levels such as alphabet learning, counting, and basic math operations, concluding with a challenging equation level. I designed documentation and conducted a survey for parents with children under 18, enhancing my skills for creating user-friendly software in the future",
         "embedType": "iframe",
         "embedSrc": "https://drive.google.com/file/d/1B46vBAB3QF_ZjqrVA_1QR_9x2MU4PgO_/preview"
     },
 
-
     {
         "id": 12,
         "title": "The Dark Side of Online Gaming",
-        "description": "Research paper on the dark side of online video games accomplished in the class 'LIBS LIBS 130: Fundamental Research Skills', with information based on the negative impact of online gaming towards children",
+        "description": "Research paper on the dark side of online video games accomplished in the class 'LIBS-130: Fundamental Research Skills', with information based on the negative impact of online gaming towards children",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1nkJcGn_zoXTMfqwEMHU6vxL466nH-LB-/preview"
+    },
+    {
+        "id": 13,
+        "title": "The Negative Consequences of Social Media",
+        "description": "Final assignment for the class 'WRIT-117: Fundamentals of Writing'completed with a group, developing a report on the negative consequences of indulging in social media, including the risk of it becoming an addiction, a substitute for physical socializing, and a target for cyber-bullying in many states. The completion of this assignment and class taught me a lot about writing in an academic and professional manner, using reliable sources.roper citations, clear and concise language",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1PkJY1LxGfcr-kxEKWZ77FA0Y-4AoHvmB/preview"
+    },
+    {
+        "id": 14,
+        "title": "Asteroid Evasion Project Management",
+        "description": "Final Project for the class 'ITEC-115: Introduction to Project Management', accomplished within a group of five with the objective of planning a project that resulted in a video game called Asteroid Evasion featuring a space-themed adventure in both 2D and 3D. The game consisted of many features, as reported throughout the document. The project was split into sections so that each team member was able to participate. Different sections of the portfolio include business value, brand identity and value, technological differentiation, competitive environment, and more.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/11uzQrOssu3tPfGvpogMAWAOaT2IPTqc4/preview"
+    },
+
+    {
+        "id": 15,
+        "title": "Hybrid SD-WAN topology",
+        "description": "Final Project for the class 'ITEC-250: Computer Network and Architecture Protocol', concluded within a group of five with the intention of designing a topology for a network. My group implemented a hybrid software-defined wide area network (SD-WAN hybrid topology), which can be defined in summary as a technology that uses a software-based approach to manage and optimize wide area networks (WANs) more effectively than traditional hardware-centric ones. The SD-WAN design combined hubs and spokes and a partial mesh topology.",
         "embedType": "iframe",
         "embedSrc": "https://docs.google.com/presentation/d/e/2PACX-1vTgahm2X1c7XvdC6bibB1HzAG_Ieg0u8c6HJofDxNnf5z4KnTG_RYRFsZTJFOuBXg/embed?start=false&loop=false&delayms=5000"
+    },
+
+    {
+        "id": 16,
+        "title": "Java Bank Application",
+        "description": "final Project finalized in the class 'ITEC-235: Object Oriented Programming,' with the objective of developing a bank application, with multiple features and functions, including options to open a checkings account, savings account and loan account. Users were able to enter customer information, Account Information, and Operations to perform.",
+        "embedType": "image",
+        "embedSrc": "../pictures/College Work/ITEC 235 final project.png"
     }
 
+
+
+
 ]
+
