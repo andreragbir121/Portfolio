@@ -49,8 +49,6 @@ h2{
   z-index: 100;
   font-size: 60px;
   transform: translateX(50%);
-
-
 }
 
 h2 span{
@@ -59,12 +57,10 @@ h2 span{
 }
 
 
-
 .content{
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px,auto));
- 
+  grid-template-columns: repeat(auto-fit, minmax(350px,auto)); 
 }
 
 .row{
@@ -96,11 +92,10 @@ h2 span{
 }
 
 .layer{
-  width: 100%;
+  width: auto;
   height: 0;
   background: linear-gradient(rgba(0,0,0,0.1),var(--extra-color));
   position: absolute;
-  border-radius: 8px;
   left: 0px;
   bottom:0;
   overflow: hidden;
@@ -109,7 +104,6 @@ h2 span{
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
   transition: height 0.5s;
 }
 
@@ -122,8 +116,8 @@ h2 span{
 
 .layer p{
   color:var(--text-color);
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .layer i{
@@ -147,8 +141,6 @@ h2 span{
 .row:hover .layer{
   height: 100%;
 }
-
-
 
 
 @keyframes fadeIn {
