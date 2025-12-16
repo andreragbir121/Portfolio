@@ -132,6 +132,22 @@
         "description": "Final project for the class 'ENTP-210: Fundamentals of Entrepreneurship,' featuring team collaboration on conceptualizing and formulating a simple but detailed business plan for a 24-hour supermarket, with marketing strategies including pricing, promotions, and more, along with financial projections, determining the funding requirements, and presenting the profits or loss over a one-year period. It also includes an operational plan, industry analysis, and more.",
         "embedType": "iframe",
         "embedSrc": "https://drive.google.com/file/d/16aKuknipso96F75z3FUrxipIw9uL1BSW/preview"
+    },
+
+    {
+        "id": 18,
+        "title": "System Analsysis on Supermarket",
+        "description": "Final project for the class 'ITEC 225: System Analysis,' performing a system analysis for a supermarket and recommending upgrades to improve efficiency and customer satisfaction. The analysis included current system evaluation, requirements gathering, and proposed solutions for inventory management, point of sale systems, and customer relationship management.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1QhEk-2FYRkUnBNaxHHqSQsfmhf5k9POY/preview"
+    },
+
+    {
+        "id": 19,
+        "title": "Database Design for Atlas Gym",
+        "description": "Final project for the class ITEC 270: Database Design I, completed as a team, focused on designing and implementing a relational database for Atlas Gym, a growing fitness center facing challenges with manual data management. The project involved analyzing business requirements, defining structural and procedural rules, creating conceptual, logical, and physical models, and normalizing tables to third normal form. Key entities included members, memberships, payments, classes, instructors, training sessions, and health records. The solution featured optimized queries for reporting, forms for staff interaction, and a switchboard for navigation, ensuring efficient membership tracking, scheduling, and secure health data management.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1qJZ_GM9HplycTPC44GkOukYB6V9WCbWU/preview"
     }
 
 ]
