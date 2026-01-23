@@ -148,6 +148,14 @@
         "description": "Final project for the class ITEC 270: Database Design I, completed as a team, focused on designing and implementing a relational database for Atlas Gym, a growing fitness center facing challenges with manual data management. The project involved analyzing business requirements, defining structural and procedural rules, creating conceptual, logical, and physical models, and normalizing tables to third normal form. Key entities included members, memberships, payments, classes, instructors, training sessions, and health records. The solution featured optimized queries for reporting, forms for staff interaction, and a switchboard for navigation, ensuring efficient membership tracking, scheduling, and secure health data management.",
         "embedType": "iframe",
         "embedSrc": "https://drive.google.com/file/d/1qJZ_GM9HplycTPC44GkOukYB6V9WCbWU/preview"
+    },
+
+    {
+        "id": 20,
+        "title": "Opening a Chipotle Franchise in Trinidad and Tobago",
+        "description": "Final project for the class MGMT 125: Principles Of Management, with the focus of opening a Chipotle franchise in Trinidad and Tobago, and maintaining the management of the franchise. With topics including planning, organizing, leading, and controlling, along with SWOT analysis, Human Resource Management Considerations, and more, to ensure the successful management of the franchise in a new market.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1IjxSY0mT1BqQYciSrJ3qe2FMAg2ckR_g/preview"
     }
 
 ]
