@@ -161,7 +161,6 @@ section{/* Section Styles */
     margin: 2rem 0 4rem;
 }
 
-
 /* Button Box Styles */
 .btn-box {
     position: relative;
@@ -170,6 +169,7 @@ section{/* Section Styles */
     width: 34.5rem;
     height: 5rem;
 }
+
 
 
 /* Button Styles */
@@ -363,7 +363,7 @@ span {
 
 
 /* Spinner Animation Styles for About Image */
-.about-img .cirlce-spin {
+.about-img .circle-spin {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1285,21 +1285,20 @@ footer{
     }
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 2px 12%;
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2px 12%;
 }
-.footer-text{
-    align-items: left;
-    justify-content: left;
-    text-align: left;
+
+.footer-text {
+  text-align: left;
 }
 
 .site-footer {
-  background-color:var(--second-bg-color);
+  background-color: var(--second-bg-color);
   text-align: center;
 }
 
@@ -1322,65 +1321,156 @@ footer{
   flex-wrap: wrap;
   margin: 40px 0;
 }
+
 .footer-contact i {
-    font-size: 50px;
-    padding-bottom: 35px;
+  font-size: 50px;
+  padding-bottom: 35px;
 }
+
 .footer-box {
-border: .2rem solid var(--main-color);    
+  border: .2rem solid var(--main-color);
   padding: 20px;
   border-radius: 10px;
   width: 250px;
   height: 150px;
   text-align: center;
 }
+
+.footer-box {
+  position: relative;          
+  border: .2rem solid var(--main-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  height: 150px;
+  text-align: center;
+  overflow: hidden;              
+  transition: .5s;
+}
+
+.footer-box i {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  position: relative;              
+  z-index: 1;
+}
+
 .footer-box a {
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
-    color: var(--text-color);
-    
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-color);
+  position: relative;              
+  z-index: 1;
+  padding-bottom: 35px;
+}
+
+/* Hover background effect */
+.footer-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;                     
+  height: 100%;
+  background: var(--main-color);
+  z-index: 0;
+  transition: .5s;
+}
+
+.footer-box:hover::before {
+  width: 100%;             
+}
+
+.footer-box:hover a, .footer-box:hover i {
+  color: var(--bg-color);
 }
 
 .footer-socials a {
-    margin: 0 10px;
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    border: .2rem solid var(--main-color);    
-    border-radius: 15%;
-    font-size: 20px;
-    color: var(--main-color);
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+  margin: 0 10px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 15%;
+  font-size: 20px;
+  color: var(--main-color);
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
 }
 
-.footer-socials i{
-    font-size: 25px;
+.footer-socials i {
+  font-size: 25px;
 }
 
 .footer-socials a:hover {
-    color:var(--bg-color);
-    
+  color: var(--bg-color);
 }
+
 .footer-socials a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: var(--main-color);
-    z-index: -1;
-    transition: .5s;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--main-color);
+  z-index: -1;
+  transition: .5s;
 }
 
+.footer-socials a:hover::before {
+  width: 100%;
+}
 
-.footer-socials a:hover::before{ 
+/* --- Responsive Fixes --- */
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-box {
     width: 100%;
+    height: auto;
+  }
+
+  .footer-socials a {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subtext-header {
+    font-size: 20px;
+  }
+
+  .subtext-main {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+  .footer-contact i {
+    font-size: 35px;
+    padding-bottom: 20px;
+  }
 }

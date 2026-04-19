@@ -1,3 +1,11 @@
+var typed = new Typed(".text",{
+    strings:[ "Information Technology Specialist", "Web developer" , "Game Developer"],
+    typeSpeed:50,
+    backSpeed:50,
+    backDelay: 1000,
+    loop:true
+});
+
 //toggle from navbar
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -74,23 +82,3 @@ document.addEventListener("DOMContentLoaded", function() {
       slider.style.transform = `translateX(${offset}px)`;
     }
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
