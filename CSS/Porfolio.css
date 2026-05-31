@@ -520,126 +520,181 @@ width: 100%;
 }
 
 /*-------------------------------------------------------------------------------------*/
-
-/* certifcates section */
-.certifcates{
+   /* Certificates Section Wrapper */
+.certifcates {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background: var(--second-bg-color);
-}
-.certifcates.heading{
-    padding-top: 0px;
-    margin-top: 0px;
+    width: 100%;
+    padding: 60px 0;
 }
 
-.certifcates h2 {
-    display: inline-block;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.certifcates h2 span{
-    color: var(--main-color);
+.certifcates h2.heading {
     text-align: center;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
+.certifcates h2 span {
+    color: var(--main-color);
+}
+
+/* Base Wrapper Layer allowing overflow elements to display safely */
 .outer-container {
-  display: flex;
-  justify-content: center;
-  width: 75%; /* Adjust the overall width as needed */
-  margin: 0 auto; /* Horizontally center the outer container */
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;            
+    max-width: 850px;      
+    margin: 0 auto;
+    overflow: visible; /* Prevents desktop side arrows from clipping */
 }
 
+/* This window acts strictly to hide the upcoming/trailing slides */
 .slider-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+    border-radius: 8px;   
 }
 
+/* Slider Track Layout config */
 .slider {
-  display: flex;
-  width: 300%; /* Adjust the width based on the number of slides */
-  transition: transform 0.5s ease;
-
+    display: flex;
+    width: 100%;          
+    transition: transform 0.3s ease-in-out;
 }
 
+/* One complete slide container per window width frame */
 .slide {
-  flex: 0 0 33.33%; /* Adjust the width based on the number of slides */
-  position: relative;
-  overflow: hidden;
+    flex: 0 0 100%;       
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .slide img {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-  padding-left: 50px;
-  padding-right:50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    max-height: 500px;    
+    object-fit: contain;  
+    transition: transform 0.3s ease;
+    padding: 0 10px;      
 }
 
 .slide-content:hover img {
-  transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .view-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
 }
 
 .slide-content:hover .view-button {
-  opacity: 1;
+    opacity: 1;
 }
 
-
 .view-button a {
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: rgba(89, 0, 255, 0.5);
-  color: #ddd;
-  text-decoration: none;
-  font-size: 20px;
-  border-radius: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(89, 0, 255, 0.85); 
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 25px;
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
 }
 
 .view-button a:hover {
-    background-color: #5c00f0; /* Lighter shade on hover */
-    color: white; /* Adjust text color for better visibility on the lighter background */
-    opacity: 80%;
-  
+    background-color: #5c00f0;
 }
-
 .prev-btn,
 .next-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px 20px;
-  border: none;
-  color: var(--main-color);
-  font-size: 45px;
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--main-color);
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 99; 
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
+.prev-btn:hover,
+.next-btn:hover {
+    transform: translateY(-50%) scale(1.1);
+    opacity: 0.9;
+}
 
+/* Pushes arrows out safely beyond content box bounds on desktop viewports */
 .prev-btn {
-   z-index: 1;
-   left:-23px;
+    left: -70px;
 }
 
 .next-btn {
-    right:-23px;
-    z-index: 1; /* Ensure the button is above the slide */
+    right: -70px;
 }
 
-/*-------------------------------------------------------------------*/
+/* Medium Laptop / Tablet screens */
+@media screen and (max-width: 1100px) {
+    .outer-container {
+        width: 82%;
+    }
+    .prev-btn { left: -55px; }
+    .next-btn { right: -55px; }
+    .prev-btn, .next-btn { font-size: 42px; }
+}
+
+/* Mobile Viewports */
+@media screen and (max-width: 768px) {
+    .outer-container {
+        width: 92%; 
+    }
+    
+    .slide img {
+        max-height: 380px;
+        padding: 0;
+    }
+
+    /* Shift buttons to slide edges cleanly over mobile touch targets */
+    .prev-btn { left: 5px; }
+    .next-btn { right: 5px; }
+    .prev-btn, .next-btn { 
+        font-size: 36px;
+        text-shadow: 0px 2px 6px rgba(0,0,0,0.6); 
+    }
+
+    .view-button a {
+        font-size: 15px;
+        padding: 8px 16px;
+    }
+}/*-------------------------------------------------------------------*/
 
 /* skills section*/
 /* Styles for the skills section */
