@@ -1339,7 +1339,6 @@ footer {
 .footer-box {
   position: relative;          
   border: .2rem solid var(--main-color);
-  padding: 20px;
   border-radius: 10px;
   width: 250px;
   height: 150px;
@@ -1350,19 +1349,19 @@ footer {
 
 .footer-box i {
   color: var(--text-color);
-  margin-bottom: 10px;
   position: relative;              
   z-index: 1;
+  font-size: 60px;
 }
 
-.footer-box a {
+.footer-box a{
   font-size: 15px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
   color: var(--text-color);
   position: relative;              
   z-index: 1;
-  padding-bottom: 35px;
+  
 }
 
 /* Hover background effect */
