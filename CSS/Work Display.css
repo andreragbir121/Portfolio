@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;700;800;900&display=swap');
 
-:root{/* Custom CSS Variables (Colors) */
+:root {
+  /* Custom CSS Variables (Colors) */
   --bg-color: #120829;
   --second-bg-color: #241142;
   --text-color: #ddddee;
@@ -8,147 +9,229 @@
   --extra-color: #421c7a;
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; 
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--second-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+  background-color: var(--second-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px; /
 }
 
+#project-container {
+  width: 100%;
+  max-width: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  
 .split-box {
-    display: flex;
-    width: 1500px; /* Fixed total width */
-    height: 850px; /* Fixed total height */
-    background: transparent;
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row; 
+  width: 100%;
+  height: 850px;       
+  background: transparent;
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .split-left {
-    width: 750px; /* Fixed width - exactly half */
-    height: 850px; /* Fixed height */
-    background: var(--bg-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-    text-align: center;
-    flex-shrink: 0; /* Prevents shrinking */
-    animation: fadeInLeft 1s ease-in-out; /* Left side fade-in animation */
+  width: 50%;          
+  height: 100%;
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  text-align: center;
+  flex-shrink: 0;
+  animation: fadeInLeft 1s ease-in-out;
 }
 
 .split-left h1 {
-    font-size: 2.5rem;
-    color: var(--text-color);
-    margin-bottom: 30px;
-    font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .split-left p {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    line-height: 1.8;
-    font-weight: 300;
-    max-width: 500px;
-    overflow: hidden; /* Prevents text from affecting layout */
+  color: var(--text-color);
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 300;
+  max-width: 500px;
 }
 
 .split-left span {
-    font-weight: bold;
-    color: var(--main-color);
+  font-weight: bold;
+  color: var(--main-color);
 }
 
 .split-line {
-    width: 2px;
-    height: 750px; /* Fixed height to match container */
-    background: linear-gradient(to bottom, transparent, var(--main-color), transparent);
-    flex-shrink: 0; /* Prevents shrinking */
+  width: 2px;
+  height: 750px;
+  background: linear-gradient(to bottom, transparent, var(--main-color), transparent);
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .split-right {
-    width: 750px; /* Fixed width - exactly half */
-    height: 850px; /* Fixed height */
-    background: var(--extra-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    flex-shrink: 0; /* Prevents shrinking */
-    animation: fadeInRight 1s ease-in-out;
-
+  width: 50%;          
+  height: 100%;
+  background: var(--extra-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex-shrink: 0;
+  animation: fadeInRight 1s ease-in-out;
 }
 
 .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
-.image-container iframe {
-    width: 650px;
-    height: 755px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    background: white;
-    flex-shrink: 0; /* Prevents shrinking */
+.image-container iframe,
+.image-container img {
+  width: 100%;
+  max-width: 650px;
+  height: 755px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: white;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
 .image-container img {
-    width: 650px;
-    height: 755px;
-    object-fit: contain;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    background: white;
-    flex-shrink: 0; /* Prevents shrinking */
+  object-fit: contain;
 }
 
-  .image-container img:hover {
-    transform: scale(1.1); /* Zoom in effect on hover */
+.image-container img:hover {
+  transform: scale(1.03); 
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    padding: 30px 20px; 
+    align-items: flex-start; 
   }
 
-
-  @keyframes fadeInLeft {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  .split-box {
+    flex-direction: column; 
+    height: auto;           
+    max-width: 100%;        
   }
 
-  @keyframes fadeInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
+  /* Dark Blue Text Container Section */
+  .split-left {
+    width: 100%;
+    height: auto;
+    padding: 45px 25px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
+  .split-left h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  .split-left p {
+    max-width: 100%;       
+  }
+
+  /* Completely hides desktop separating bar on phone displays */
+  .split-line {
+    display: none;
+  }
+
+  .split-right {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;    
+
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Dynamic structural resizing overrides to prevent horizontal overflow breakage */
+  .image-container iframe,
+  .image-container img {
+    width: 100%;    
+    max-width: 100%;
+    height: auto;
+    min-height: 450px;
+    flex-shrink: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 15px 12px;   
+  }
+
+  .split-left {
+    padding: 35px 15px;
+  }
+
+  .split-left h1 {
+    font-size: 1.5rem;
+  }
   
+  .split-right {
+    padding: 20px 12px;
+  }
+
+  .image-container iframe,
+  .image-container img {
+    min-height: 380px;    
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
