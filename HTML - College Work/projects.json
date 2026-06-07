@@ -156,7 +156,14 @@
         "description": "Final project for the class MGMT 125: Principles Of Management, with the focus of opening a Chipotle franchise in Trinidad and Tobago, and maintaining the management of the franchise. With topics including planning, organizing, leading, and controlling, along with SWOT analysis, Human Resource Management Considerations, and more, to ensure the successful management of the franchise in a new market.",
         "embedType": "iframe",
         "embedSrc": "https://drive.google.com/file/d/1IjxSY0mT1BqQYciSrJ3qe2FMAg2ckR_g/preview"
-    }
+    },
 
+    {
+        "id": 21,
+        "title": "Massy-Stores Cyber-Attack",
+        "description": "Final project for ITEC 360: Security Management, completed as a team, analyzing the April 2022 Hive ransomware attack on Massy Stores. The project involved investigating the technical mechanics of the double-extortion breach, evaluating its regional operational and legal impacts, and developing a comprehensive, 10-pillar CISO strategic roadmap. The solution featured actionable enterprise defense mechanisms, including Zero-Trust access controls, network segmentation, immutable backup deployments, and structured crisis communication protocols to ensure business continuity.",
+        "embedType": "iframe",
+        "embedSrc": "https://drive.google.com/file/d/1BJUMR88tdWl9YvtrH6vge2ZFrt1ac1bS/preview"
+    }
 ]
 
